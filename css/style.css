@@ -1,0 +1,206 @@
+                        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Da+2&family=Montserrat:ital,wght@1,200&display=swap');
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                        
+                        html {
+                            font-size: 62.5%;
+                        }
+                        
+                         :root {
+                            --dark: #6c5ce7;
+                            --background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+                            ;
+                        }
+                        
+                        body {
+                            width: 100%;
+                            /* height: 120vh; */
+                            background-color: var(--dark);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: auto;
+                        }
+                        
+                        main {
+                            width: 450px;
+                            /* height: 100vh; */
+                            text-align: center;
+                            background-image: var(--background);
+                            border: solid var(--dark);
+                            border-width: 0.8rem;
+                            border-radius: 1rem;
+                        }
+                        
+                        .main-welcome {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .main-welcome h2 {
+                            text-align: center;
+                            font-size: 2.50rem;
+                            font-family: 'Baloo Bhai 2', cursive;
+                            text-transform: capitalize;
+                            font-weight: 500;
+                        }
+                        
+                        .main-welcome img {
+                            width: 70%;
+                            max-height: 22rem;
+                            height: auto;
+                        }
+                        
+                        .main-event-section p {
+                            font-size: 3rem;
+                            text-transform: capitalize;
+                            font-family: 'Baloo Da 2', cursive;
+                        }
+                        
+                        h3 {
+                            font-size: 3rem;
+                        }
+                        
+                        p {
+                            font-size: 1.5rem;
+                        }
+                        
+                        .section-btn {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            margin-top: 4rem;
+                            margin-bottom: 2rem;
+                        }
+                        
+                        button {
+                            min-width: 28rem;
+                            background-image: linear-gradient(92.88deg, #455ed5 9.16%, #5646cc 43.89%, #673fd7 64.72%);
+                            border-radius: 8px;
+                            height: 5rem;
+                            color: #ffffff;
+                            border: none;
+                            margin: 2rem 0;
+                            cursor: pointer;
+                            text-align: center;
+                            font-family: 'Baloo Bhai 2', cursive;
+                            font-size: 2rem;
+                            letter-spacing: 0.1rem;
+                            -webkit-user-select: none;
+                            text-transform: capitalize;
+                        }
+                        
+                        button:last-child {
+                            background: var(--dark);
+                            margin-bottom: 0;
+                        }
+                        /* our game section */
+                        
+                        .game-section {
+                            height: 60vh;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        #game-button button {
+                            margin-bottom: 4rem;
+                        }
+                        
+                        .game-input h3 {
+                            margin-bottom: 3rem;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-weight: 200;
+                        }
+                        
+                        input {
+                            margin-bottom: 3rem;
+                            width: 15rem;
+                            height: 4rem;
+                            font-family: 'Baloo Da 2', cursive;
+                            font-size: 1.52rem;
+                            text-align: center;
+                            background: transparent;
+                            border: .1rem solid lightgray;
+                        }
+                        
+                        .section-info {
+                            text-align: left;
+                            margin-bottom: 4rem;
+                        }
+                        
+                        .info {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .info p {
+                            text-align: left;
+                            margin: 2rem 0;
+                            text-transform: capitalize;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            font-size: 1.60rem;
+                        }
+                        
+                        .info {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .info #info-num {
+                            font-size: 1.55rem;
+                            padding: 0 5rem;
+                        }
+                        
+                        .info #info-gues {
+                            font-size: 1.55rem;
+                            padding: 0 5rem;
+                        }
+                        /* responsive for mobiol */
+                        
+                        @media (max-width: 400px) {
+                            main {
+                                width: 80vw;
+                            }
+                            .main-welcome h2 {
+                                font-size: 1.50rem;
+                            }
+                            .main-event-section p {
+                                font-size: 1.50rem;
+                            }
+                            button {
+                                min-width: 15rem;
+                                height: 4rem;
+                                font-size: 1.10rem;
+                            }
+                            .game-section {
+                                height: auto;
+                                width: auto;
+                            }
+                            .game-input h3 {
+                                font-size: 1.30rem;
+                            }
+                            input {
+                                width: 14rem;
+                            }
+                            .info p {
+                                font-size: 1.10rem;
+                            }
+                            .info #info-num {
+                                font-size: 1.10rem;
+                                padding: 0 2rem;
+                            }
+                            .info #info-gues {
+                                font-size: 1.10rem;
+                                padding: 0 2rem;
+                            }
+                        }
