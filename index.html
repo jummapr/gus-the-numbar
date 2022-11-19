@@ -1,52 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>HTML</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
 
-<body onload="init()">
+  <body onload="init()">
     <main>
-        <div class="main-welcome" id="welcomescreen">
-            <h2>Gess the randome <br> numbar <br> between 1-1000</h2>
-            <img src="/img/Video game developer-pana.png" alt="">
-            <section class="main-event-section">
-                <p>
-                    select the Dificalty
-                </p>
-                <div class="section-btn">
-                    <button class="btn" id="btn-1">Easy:10 Athemt</button>
-                    <button class="btn" id="btn-2">Hard: 5 Athemt</button>
-                </div>
-            </section>
-        </div>
-        <section class="game-section" id="gameare">
-            <div id="game-button">
-                <button id="new_game" onclick="newgame()">New Game</button>
-            </div>
-            <div class="game-input">
-                <h3 id="para">Your Gues</h3>
-                <input type="number" id="input-box" placeholder="Enter Your Numbar" min="1" max="100" onchange="cum()">
-            </div>
-            <section class="section-info">
-                <div class="info">
-                    <p>Number of previous attempts</p>
-                    <span id="info-num">0</span>
-                </div>
-                <div class="info">
-                    <p>Number of previous guesses</p>
-                    <span id="info-gues">0</span>
-                </div>
-            </section>
+      <div class="main-welcome" id="welcomescreen">
+        <h2>
+          Gess the randome <br />
+          numbar <br />
+          between 1-1000
+        </h2>
+        <img src="/img/Video game developer-pana.png" alt="" />
+        <section class="main-event-section">
+          <p>select the Dificalty</p>
+          <div class="section-btn">
+            <button class="btn" id="btn-1">Easy:10 Athemt</button>
+            <button class="btn" id="btn-2">Hard: 5 Athemt</button>
+          </div>
         </section>
-
+      </div>
+      <section class="game-section" id="gameare">
+        <div id="game-button">
+          <button id="new_game" onclick="newgame()">New Game</button>
+        </div>
+        <div class="game-input">
+          <h3 id="para">Your Gues</h3>
+          <input
+            type="number"
+            id="input-box"
+            placeholder="Enter Your Numbar"
+            min="1"
+            max="100"
+            onchange="cum()"
+          />
+        </div>
+        <section class="section-info">
+          <div class="info">
+            <p>Number of previous attempts</p>
+            <span id="info-num">0</span>
+          </div>
+          <div class="info">
+            <p>Number of previous guesses</p>
+            <span id="info-gues">0</span>
+          </div>
+        </section>
+      </section>
     </main>
     <script src="/js/main.js"></script>
-</body>
-
+  </body>
 </html>
